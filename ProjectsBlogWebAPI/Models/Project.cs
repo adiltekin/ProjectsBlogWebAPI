@@ -11,5 +11,7 @@ namespace ProjectsBlogWebAPI.Models
         public string? ProjectContent { get; set; }
         public string? ImgName { get; set; }
         public string? ImgUrl { get; set; }
+        public DateTime? startDate { get; set; }
+        public DateTime? endDate { get; set; }
     }
 }

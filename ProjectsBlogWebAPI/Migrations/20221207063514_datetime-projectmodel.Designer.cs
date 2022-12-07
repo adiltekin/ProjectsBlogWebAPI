@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProjectsBlogWebAPI.Data;
 
@@ -11,9 +12,11 @@ using ProjectsBlogWebAPI.Data;
 namespace ProjectsBlogWebAPI.Migrations
 {
     [DbContext(typeof(ProjectsBlogDbContext))]
-    partial class ProjectsBlogDbContextModelSnapshot : ModelSnapshot
+    [Migration("20221207063514_datetime-projectmodel")]
+    partial class datetimeprojectmodel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
